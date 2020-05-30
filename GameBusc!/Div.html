@@ -1,54 +1,42 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <title>Busca_Minas</title>
+  <head>
+  </head>
   <body>
-    <h1>HOLA_ MUNDO</h1>
    <div id="TableroCompleto"></div>
   </body>
   <script type="text/javascript">
-  var aleatorio;var Img = new Array();
-  Img[0]="0.png";Img[1]="1.png";Img[2]="4.png";
-  Img[3]="3.png";Img[4]="Mina.png";var c=0;
 
-  var body = document.getElementsByTagName("body")[0];var tabla = document.createElement("table");
+
+  var c=0;
+
+  var body = document.getElementsByTagName("body")[0];
+  var tabla = document.createElement("table");
   var tblBody = document.createElement("tbody");
+
   for (var i = 0; i < 4; i++) {
   var fila  = document.createElement("tr");
   for (var j = 0; j < 4; j++) {
-  var celda =   document.createElement("td");
-  var Boton =   document.createElement("button");
-  var Ico1   =  document.createElement("img");
-  var Ico2   =  document.createElement("img");
-
-  Ico1.src= "Bloque.png";
-  Boton.appendChild(Ico1);
-  celda.appendChild(Ico1);c=c+1;
+  var celda =  document.createElement("td");
+  var Blo   =  document.createElement("img");
+  var Min   =  document.createElement("img");
+  Blo.src="Bloque.png";
+  celda.appendChild(Blo);c=c+1;
   celda.setAttribute("id","ID"+c);
- // alert("#1 Nombre : "+celda.id)
-  Ico1.onclick=function Cambio;
- // alert("#2 Nombre : "+celda.id)
-
-    /**alert("Nombre : "+celda.id)
-     Ico1.src="Mina.png"
-     Boton.appendChild(Ico1)
-     celda.appendChild(Boton);
-     alert("Hola_Mundo212");*/
-   
-
+  celda.onclick=function(){
+    alert("Nombre : "+celda.id);
+  };
   fila.appendChild(celda);
   }
   tblBody.appendChild(fila);
   }
   tabla.appendChild(tblBody);
   TableroCompleto.appendChild(tabla);
+  tabla.setAttribute('Class','Tabla');
   tabla.setAttribute('border','10');
-
-  function Cambio(){
-     Ico1.src="Mina.png"
-     Boton.appendChild(Ico1)
-     celda.appendChild(Boton);
-     alert("Hola_Mundo212");
-  }
+  //Frente1.onclick=Juego;
+  //for(var i=0;i<5;i++){
+  //}
 
   </script>
   <link rel="stylesheet" href="1.css">
