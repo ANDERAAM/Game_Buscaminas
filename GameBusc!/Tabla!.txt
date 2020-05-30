@@ -1,0 +1,10 @@
+/*  alert("ESTE ES EL NUMERO ALETORIO : "+aleatorio)
+    /*Ico.src=Img[aleatorio];
+    Boton.appendChild(Ico);
+    celda.appendChild(Boton);*/
+
+    /* aleatorio=Math.round(Math.random()*(4-0)+parseInt(0));
+     alert("ESTE ES EL NUMERO ALEATORIO : "+aleatorio);
+      Ico2 = Ico1.removeChild("Bloque.png");
+      Ico2.src=Img[aleatorio];
+      celda.appendChild(Ico2);*/
