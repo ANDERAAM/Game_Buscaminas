@@ -7,25 +7,20 @@
   </body>
   <script type="text/javascript">
 
-
-  var c=0;
+  var c=0;var Nom;
 
   var body = document.getElementsByTagName("body")[0];
   var tabla = document.createElement("table");
   var tblBody = document.createElement("tbody");
 
-  for (var i = 0; i < 4; i++) {
+  for (var i = 0; i < 4; i++){
   var fila  = document.createElement("tr");
-  for (var j = 0; j < 4; j++) {
+  for (var j = 0; j < 4; j++){
   var celda =  document.createElement("td");
-  var Blo   =  document.createElement("img");
-  var Min   =  document.createElement("img");
-  Blo.src="Bloque.png";
-  celda.appendChild(Blo);c=c+1;
-  celda.setAttribute("id","ID"+c);
-  celda.onclick=function(){
-    alert("Nombre : "+celda.id);
-  };
+  var Img   =  document.createElement("img");
+  Img.src="Bloque.png"; c=c+1;
+  Img.setAttribute("id","ID"+c);//alert();
+  celda.appendChild(Img);
   fila.appendChild(celda);
   }
   tblBody.appendChild(fila);
@@ -34,10 +29,26 @@
   TableroCompleto.appendChild(tabla);
   tabla.setAttribute('Class','Tabla');
   tabla.setAttribute('border','10');
-  //Frente1.onclick=Juego;
-  //for(var i=0;i<5;i++){
-  //}
+
+  function myFunction() {
+   document.getElementById("IDO").innerHTML = alert("Hola_Mundo")
+}
+
+/*function CambioClick() {
+  Img.src="Mina.png";
+  celda.appendChild(Img);
+  fila.appendChild(celda);
+}
+*/
+
+
+    //Blo.onclick=function(){
+
+    /*var posleft=this.offsetLeft;
+    var postop=this.offsetTop;
+    alert("Left: "+posleft+"px - Top: "+postop+"px");*/
+//}
 
   </script>
   <link rel="stylesheet" href="1.css">
-  </html> 
+  </html>
